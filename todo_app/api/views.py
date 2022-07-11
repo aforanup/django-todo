@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework.response import Response
 
-# Create your views here.
+
+class UserTodoView():
+    def get(self, request, *args, **kwargs):
+        pass
+
+    def post(self, request, *args, **kwargs):
+        pass
