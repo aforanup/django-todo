@@ -16,7 +16,7 @@ class UserTodoView():
             return Response(serializer.data)
 
 
-class UserDetailView():
+class UserTodoDetailView():
     def get(self, request, id, *args, **kwargs):
         todo = models.Todo.objects.filter(id=id).first()
         serializer = serializers.TodoSerializer(todo)
